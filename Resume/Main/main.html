@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>[WORKING NAME]</title>
+        <link rel="stylesheet" href="mainStyle.css">
+    </head>
+    <body>
+        <div class="titleLinks">
+            <h1>
+                MAIN SYMBOL...
+                <a href="Linked/testLink.html">Test</a>
+            </h1>
+        </div>
+        <div class="blurbImage">
+            <img src="mePic.jpg" alt="Picture of me" style="height:100%;width: 100%;">
+        </div>
+        <div class="mainBlurb">
+            <h1 class="blurbHead">Adam Mikkelsen</h1>
+            <h4 style="margin-top: 0%;margin-bottom: 10px;">First Year Undergrad at the University of North Carolina at Chapel Hill</h4>
+        </div>
+        <button type="button" class="collapsible">Schooling</button>
+        <div class="content">
+            <p>Current computer science major at UNC, with a minor in Applied Physical Sciences and Engineering<br>
+            Graduated from 71st High School in 2024<br>
+            Certifications in Programming and 
+            
+            </p>
+        </div>
+        <button type="button" class="collapsible">Work</button>
+        <div class="content">
+            <ul>
+                <li>3 Years working as a lifeguard for Army MWR</li>
+            </ul>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "block";
+                }
+            });
+            } 
+        </script>
+    </body>
+</html>
+
